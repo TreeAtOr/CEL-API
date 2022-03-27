@@ -1,6 +1,6 @@
 compiled.js
 /docs
-/compiled/docs
+compiled
 /.vscode
 /node_modules
 package-lock.json
