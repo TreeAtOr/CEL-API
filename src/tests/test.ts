@@ -1,8 +1,8 @@
 import mongoose = require('mongoose');
-import { internalTest } from './internal-test';
-import { testWordlist } from './wordlist-test';
+import { internalTest } from './unit-test';
+import { testWordlist } from './wordlist-e2e-test';
 
-mongoose.connect(`mongodb+srv://Worker:SOM24t2c9g2zLTpO@wordlist.0mdoj.mongodb.net/Users?retryWrites=true&w=majority`,
+mongoose.connect(process.env.TEST_DATABASE_URI,
 {useNewUrlParser: true, useFindAndModify: false, useUnifiedTopology: true },async (err) => {
     //await internalTest();
     await testWordlist();

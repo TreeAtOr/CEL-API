@@ -45,7 +45,7 @@ function fetchWordlistWordRemove(token:string,wordlist:string,words:Array<string
     })
 }
 
-const TESTTOKEN = '60546838bca7bd2dacbfafd9bJtOCHrjiNqPKQ4W2OyO'
+const TESTTOKEN = '60546838bca7bd2dacbfafd9bJtOCHrjiNqPKQ4W2OyO' // This only test token 
 
 export async function testWordlist() {
     let r1 : any,wl : any

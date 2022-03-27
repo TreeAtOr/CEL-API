@@ -10,7 +10,7 @@ let server = express();
 
 
 server.use(session({
-    secret:'IGOR PIROG',
+    secret: process.env.COOKIE_SECRET,
     resave: true,
     rolling: true,
     saveUninitialized: false,
